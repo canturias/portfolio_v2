@@ -5,6 +5,8 @@ body {
 }
 
 .main {
+  box-sizing: border-box;
+
   display: inline-block;
   text-align: center;
   padding-top: 4px;
@@ -64,6 +66,8 @@ body {
 
 .bio {
   margin-top: 24px;
+  display: inline-block;
+  margin-bottom: 0px;
 }
 
 .grid-outside {
@@ -244,15 +248,25 @@ body {
 }
 
 @media (hover: none) {
+  .link-box {
+    border-color: white;
+  }
+
   .youtube-button {
     color: rgba(255, 0, 0, 1);
-    border-color: rgba(255, 200, 200, 0.85);
+    fill: rgba(255, 0, 0, 1);
     background-color: rgb(28, 12, 12);
+  }
+
+  .github-button {
+    fill: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 17, 23)
   }
 
   .facebook-button {
     color: rgb(0, 81, 255);
-    border-color: rgba(200, 222, 255, 0.75);
+    fill: rgb(0, 81, 255);
     background-color: rgb(12, 13, 28);
   }
 
@@ -260,7 +274,7 @@ body {
     color: white;
     border-color: white;
     filter: brightness(150%) saturate(85%);
-}
+  }
 }
 
 @keyframes main-load {
@@ -272,7 +286,7 @@ body {
     -moz-transform: translateY(2%);
     -ms-transform: translateY(2%);
     -o-transform: translateY(2%);
-}
+  }
     100% {
       filter: opacity(100%);
       -webkit-filter: opacity(100%);
@@ -281,5 +295,86 @@ body {
       -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
       -o-transform: translateY(0%);
+  }
 }
+
+@media (max-width: 960px) {
+  .main {
+    margin-top: 48px;
+  }
+
+  .grid-inside {
+    grid-template-columns:max-content;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    box-sizing: border-box;
+    width: 480px;
+  }
+
+  .title {
+    box-sizing: border-box;
+    overflow: hidden;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .title img{
+    width: 72px;
+    height: 72px;
+    border-radius: 96px;
+    -webkit-border-radius: 96px;
+    -moz-border-radius: 96px;
+    -ms-border-radius: 96px;
+    -o-border-radius: 96px;
+  }
+
+  .title .toffee {
+    font-size: 72px;
+  }
+
+  .bio {
+    font-size: 1rem;
+    
+  }
+
+  .link-rectangle {
+    width: 360px;
+  }
+
+  .other-button img {
+    width: 360px;
+  }
+}
+
+@media (max-width: 580px) {
+  .title img{
+    width: 64px;
+    height: 64px;
+    border-radius: 96px;
+    -webkit-border-radius: 96px;
+    -moz-border-radius: 96px;
+    -ms-border-radius: 96px;
+    -o-border-radius: 96px;
+  }
+
+  .title .toffee {
+    font-size: 64px;
+  }
+
+  .bio {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .link-rectangle {
+    width: 240px;
+  }
+
+  .other-button img {
+    width: 240px;
+  }
 }
