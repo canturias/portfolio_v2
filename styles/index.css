@@ -1,0 +1,285 @@
+body {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: inline-block;
+  text-align: center;
+  padding-top: 4px;
+  animation: main-load 1000ms ease-out 300ms;
+  -webkit-animation: main-load 1000ms ease-out 300ms;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+.title:hover {
+  color: white;
+  filter: brightness(112%);
+  -webkit-filter: brightness(112%);
+  transform: scale(101%);
+  -webkit-transform: scale(101%);
+  -moz-transform: scale(101%);
+  -ms-transform: scale(101%);
+  -o-transform: scale(101%);
+}
+
+.title .toffee {
+  content: "TOFFEE";
+}
+
+.title .bio {
+  display: block;
+}
+
+.title img {
+  display: flex;
+  vertical-align: middle;
+  margin-right: 16px;
+  width: 96px;
+  height: 96px;
+  border-radius: 96px;
+  -webkit-border-radius: 96px;
+  -moz-border-radius: 96px;
+  -ms-border-radius: 96px;
+  -o-border-radius: 96px;
+}
+
+.title .toffee {
+  margin: 0px;
+  padding: 0px;
+  font-size: 96px;
+  color: rgb(236, 236, 255);
+}
+
+.bio {
+  margin-top: 24px;
+}
+
+.grid-outside {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-inside {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 36px;
+  font-weight: 700;
+}
+
+.link-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(20, 20, 20);
+  border: 4px;
+  border-style: solid;
+  border-color: rgb(196, 196, 196);
+  fill: rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Roboto Mono";
+  transition: 0.15s ease-out;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -ms-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+}
+.link-box:hover {
+  border-color: white;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
+.icons {
+  padding: 12px;
+  width: 42px;
+  height: auto;
+}
+
+.ytmusic {
+  width: 48px;
+  padding: 8px;
+}
+
+.link-box .username {
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+.link-box .username:hover {
+  content: "@toffeetelevision";
+}
+
+.facebook-button:hover {
+  fill: rgb(50, 132, 255);
+  color: rgb(50, 132, 255);
+  background-color: rgb(12, 13, 28);
+}
+
+.github-button:hover {
+  fill: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(13, 17, 23)
+}
+
+.youtube-button:hover {
+  color: rgba(255, 0, 0, 1);
+  background-color: rgb(28, 12, 12);
+}
+
+.other-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.link-rectangle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+  height: 64px;
+  margin-bottom: 24px;
+  background-color: rgb(20, 20, 20);
+  border: 4px;
+  border-style: solid;
+  border-color: rgb(226, 226, 245);
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Roboto Mono", Arial;
+  font-weight: 700;
+  filter: saturate(50%);
+  transition: 0.15s ease-out;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -ms-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  -webkit-filter: saturate(50%);
+}
+
+.other-button span {
+  z-index: 3;
+  position: absolute;
+}
+
+.other-button img {
+  z-index: 1;
+  width: 540px;
+  height: 64px;
+  filter: brightness(35%) blur(1.5px);
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+  -webkit-filter: brightness(35%) blur(1.5px);
+}
+
+.blogs {
+  object-fit: cover;
+  position: absolute;
+  object-position: left 78% top 40%;
+}
+
+.journey {
+  object-fit: cover;
+  position: absolute;
+  object-position: 50% 60%;
+}
+
+.notebook {
+  object-fit: cover;
+  position: absolute;
+  object-position: left 65%;
+}
+
+.granted {
+  cursor: pointer;
+}
+.granted:hover {
+  color: white;
+  border-color: white;
+  filter: brightness(150%) saturate(85%);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  -webkit-filter: brightness(150%) saturate(85%);
+}
+
+.denied {
+  cursor: not-allowed;
+  filter: brightness(30%) saturate(0%);
+  -webkit-filter: brightness(30%) saturate(0%);
+}
+.denied:hover {
+  filter: brightness(20%) saturate(0%);
+  -webkit-filter: brightness(20%) saturate(0%);
+}
+
+@media (hover: none) {
+  .youtube-button {
+    color: rgba(255, 0, 0, 1);
+    border-color: rgba(255, 200, 200, 0.85);
+    background-color: rgb(28, 12, 12);
+  }
+
+  .facebook-button {
+    color: rgb(0, 81, 255);
+    border-color: rgba(200, 222, 255, 0.75);
+    background-color: rgb(12, 13, 28);
+  }
+
+  .granted {
+    color: white;
+    border-color: white;
+    filter: brightness(150%) saturate(85%);
+}
+}
+
+@keyframes main-load {
+    0% {
+    filter: opacity(0%);
+    -webkit-filter: opacity(0%);
+    transform: translateY(2%);
+    -webkit-transform: translateY(2%);
+    -moz-transform: translateY(2%);
+    -ms-transform: translateY(2%);
+    -o-transform: translateY(2%);
+}
+    100% {
+      filter: opacity(100%);
+      -webkit-filter: opacity(100%);
+      transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+}
+}

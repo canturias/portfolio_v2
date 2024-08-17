@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  display: flex;
+  height: 48px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 6px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 2px;
+  border-bottom: 2px;
+}
+
+/* ⇩ Left Header ⇩ */
+.left-header {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  align-items: center;
+}
+
+.left-header-contents {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(212, 212, 220);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.about {
+  margin-left: 10px;
+}
+
+.repository {
+  margin-right: 10px;
+}
+/* ⇧ Left Header ⇧ */
+
+/* ⇩ Right Header ⇩ */
+.right-header {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  flex: 4;
+  justify-content: right;
+  align-items: center;
+}
+
+.right-header-contents {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  width: 30px;
+  height: 30px;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1.6;
+}
+.settings:active {
+  stroke-width: 1.6;
+}
+
+.header-denied:hover {
+  cursor: not-allowed;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+/* ⇧ Right Header ⇧ */

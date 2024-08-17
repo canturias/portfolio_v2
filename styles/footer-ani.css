@@ -1,0 +1,25 @@
+.footer {
+  animation: footer-load 1000ms ease-out 300ms;
+  -webkit-animation: footer-load 1000ms ease-out 300ms;
+}
+
+@keyframes footer-load {
+    0% {
+      filter: opacity(1%);
+      -webkit-filter: opacity(1%);
+      transform: translateY(12%);
+      -webkit-transform: translateY(12%);
+      -moz-transform: translateY(12%);
+      -ms-transform: translateY(12%);
+      -o-transform: translateY(12%);
+}
+    100% {
+      filter: opacity(100%);
+      -webkit-filter: opacity(100%);
+      transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+}
+}

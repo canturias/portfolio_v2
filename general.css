@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(16, 16, 16);
+  font-family: Inter, Poppins, Arial;
+  color: white;
+}
+
+/* ⇩ Chrome Scrollbar ⇩ */
+::-webkit-scrollbar {
+  width: 22px;
+  height: 22px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(16, 16, 16);
+  margin-block: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(78, 78, 82) 0%, rgb(32, 32, 38) 100%);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: 5px solid rgb(16, 16, 16);
+  border-top: 5px solid rgb(16, 16, 16);
+  border-bottom: 5px solid rgb(16, 16, 16);
+  border-right: 3px solid rgb(16, 16, 16)
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(rgb(68, 68, 72), rgb(22, 22, 28));
+}
+/* ⇧ Chrome Scrollbar ⇧ */
+
+/* ⇩ Firefox Scrollbar ⇩ */
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: rgb(68, 68, 72) rgb(16, 16, 16);
+    scrollbar-width: thin;
+  }
+}
+/* ⇧ Firefox Scrollbar ⇧ */
+
+.invis {
+  visibility: hidden;
+}
+
+.toggle {
+  display: none;
+}
